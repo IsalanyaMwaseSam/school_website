@@ -1,0 +1,267 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>School Website</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static '/assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/owl.css">
+    <link rel="stylesheet" href="{% static '/assets/css/lightbox.css' %}">
+    
+<!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+  </head>
+
+<body>
+
+   
+   <!--header-->
+   <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#">BUGEMA UNIVERSITY</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li class="has-submenu"><a href="#section2">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Who we are?</a></li>
+            <li><a href="#section3">What we do?</a></li>
+            <li><a href="#section3">How it works?</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu"><a href="#">Academics</a>
+          <ul class="sub-menu">
+            <li style="text-align: center;"><a href="{% url 'graduation' %}">School Of Graduate Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'business' %}">School Of Business</a></li>
+            <li style="text-align: center;"><a href="{% url 'Computing' %}">School Of Computing & Informatics</a></li>
+            <li style="text-align: center;"><a href="{% url 'education' %}">School Of Education</a></li>
+            <li style="text-align: center;"><a href="{% url 'health' %}">School Of Health Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'social' %}">School Of Social Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'theology' %}">School Of Theology And Religious Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'growth' %}">School Of Graduate Professional Growth</a></li>
+            <li style="text-align: center;"><a href="{% url 'research' %}">School Of Intensive Research</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6">Contact</a></li>
+      </ul>
+    </nav>
+      <div class="title">
+        <h2>SCHOOL OF EDUCATION</h2>
+      </div>
+  </header>
+
+  <section id="content">
+    <div class="read">
+      <h2>VISION</h2>
+      <p>
+        To equip students with essential skills and competencies in teaching and research that will make them unique educators wherever they will be.
+      </p>
+      <h3>OBJECTIVES:</h3>
+      <P><b>The School of Education seeks to:</b></P>
+      <p>
+        <ol type="1">
+          <li>Train educators in the light of the Seventh day Adventist philosophy of education, which places emphasis on restoring the image of God in mankind through a harmonious development of the physical, mental, spiritual and social powers.</li>
+          <li>Impart in student-teachers’ knowledge and skills that will make them effective and efficient teachers in various levels of education.</li>
+          <li>Equip students with relevant knowledge and skills to enable them assume leadership roles in the educational systems and other institutions of society.</li>
+          <li>Develop educators who will seek to identify themselves with and create a positive impact on the youth who make up a large percentage of our society.</li>
+          <li>Prepare candidates for higher education.</li>
+        </ol>
+      </P>
+      <h4>DEPARTMENT</h4>
+      <p>The School of Education consists of the following departments:
+        <ol type="1">
+          <li>Department of Arts Education</li>          
+          <li>Department of Language Education</li>
+          <li>Department of Science Education</li>
+        </ol>
+      </p>
+      <h5>PROGRAMS OFFEREED BY THE SCHOOL</h5>
+      <p>The School of Education offers programs leading to the award of Bachelor of Arts with Education and Bachelor of Science with Education degrees both secondary and primary options. It also offers Diploma in Education (only in Primary option). There is no Diploma in Secondary Education. The primary education courses are found under the Institute of Professional Growth section of this bulletin.</br>
+        Each student in the School of Education must have two teaching subjects. They should check for appropriate subject combinations under each department.  In addition to the teaching subjects, students are expected to do General Education and Professional Education courses; professional education courses include a research project and two sessions of school practice, each lasts for eight (8) weeks.</br>
+        The following are the general education courses for ALL degree students in the School of Education:        
+      </p>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="course-text">
+        <p>COURSES</p>
+        <div class="course-box">
+            <div class="single-course">
+                <img src="{% static '/assets/images/education.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Intensive English(One Year)</h3>
+                    <hr>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/HEC.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Higher Education Certificate (HEC) Program</h3>
+                    <hr>
+                    <p>This programme is intended for students from countries whose secondary school qualifications are not considered equivalent to Uganda Advanced Certificate of Education (UACE) but permit</p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/edu.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Doctor of Philosophy in Educational Management</h3>
+                    <hr>
+                    <p>Programme Name and Duration The programme name is Doctor of Philosophy in Educational Management. This programme is designed to take a minimum of Four (4)</p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/educat.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Post Graduate Diploma in Education</h3>
+                    <hr>
+                    <p><b>Program Description The Postgraduate Diploma in Education at Bugema University is designed to produce graduates who intend to teach in secondary schools, and those who
+                    </b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/ed.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Master of Arts in Curriculum and Instruction</h3>
+                    <hr>
+                    <p><b>Basic Courses Code Course Name CU GRGS 5101 Ethics, Cultural and Religious Values 03 MEDG 5101 Socio-Cultural Foundations of Education 03 MEDG 5102 Strategic Planning,</b>
+                    </p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/educatio.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Master of Arts In Education Management</h3>
+                    <hr>
+                    <p><b>Basic Courses Code Course Name CU GRGS 5101 Ethics, Cultural and Religious Values 03 MEDG 5101 Socio-Cultural Foundations of Education 03 MEDG 5102 Strategic Planning,</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"></div>
+          <div class="social">
+            <h6>Follow us</h6>
+            <a class="list__item-link list__item-link_facebook" href="https://www.facebook.com/bugemauniv.ac.ug/?_rdc=1&amp;_rdr" target="_blank"><i class="fa fa-facebook"></i> </a>
+            <a class="list__item-link list__item-link_twitter" href="https://twitter.com/UnivBugema" target="_blank"><i class="fa fa-twitter"></i> </a>
+            <a class="list__item-link list__item-link_instagram" href="https://www.instagram.com/univbugema" target="_blank"><i class="fa fa-instagram"></i> </a>
+            <a class="list__item-link list__item-link_youtube" href="https://www.youtube.com/channel/UCNbb7bqAyDBt1AqvKuCQihQ/featured" target="_blank"><i class="fa fa-youtube"></i></a>
+          </div>
+          <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2021 - SamTech</div></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static '/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static '/assets/js/isotope.min.js' %}"></script>
+    <script src="{% static '/assets/ts/js/owl-carousel.js' %}"></script>
+    <script src="{% static '/assets/js/lightbox.js' %}"></script>
+    <script src="{% static '/assets/js/tabs.js' %}"></script>
+    <script src="{% static '/assets/js/video.js' %}"></script>
+    <script src="{% static '/assets/js/slick-slider.js' %}"></script>
+    <script src="{% static '/assets/js/custom.js' %}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</html>
+</body>
+
+
+ 

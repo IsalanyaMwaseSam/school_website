@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<!--
+	xBe by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+
+    <title> xBe Free HTML5 Responsive Template  | Template Stock</title>
+
+    <!-- Bootstrap Core CSS -->
+
+    <link href="{% static '/assets/css/bootstrap.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="{% static '/assets/css/style2.css' %}">
+
+    <!-- Custom Fonts -->
+
+   <link href="{% static '/assets/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+
+
+    <!-- Custom Animations -->
+
+    <link rel="stylesheet" href="{% static '/assets/css/animate.css' %}">
+
+</head>
+
+<body>
+ 
+     <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container-fluid wrapper">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h2 class="section-heading">Pricing</h2>
+                    <h3 class="section-subheading">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            {% for course in courses%}
+            <div class="col-sm-4">
+                <div class="pricing text-center">
+                    <div class="pricing-top-box">
+                         <h3 class="pricing-title">{{ course.title }}</h3>
+                        <h4 class="price">$39</h4>
+                    </div>
+                    <ul>
+                        <li>Free Download</li>
+                        <li>1000+ Softwear</li>
+                        <li>Full Access</li>
+                        <li>Free Update</li>
+                        <li>Live Support</li>
+                    </ul>
+                    <a href="" class="btn btn-send">Sign Up</a>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="col-sm-4">
+                <div class="pricing text-center">
+                    <div class="pricing-top-box">
+                       <h3 class="pricing-title">Medium</h3>
+                        <h4 class="price">$89</h4>
+                    </div>
+                    <ul>
+                        <li>Free Download</li>
+                        <li>1000+ Softwear</li>
+                        <li>Full Access</li>
+                        <li>Free Update</li>
+                        <li>Live Support</li>
+                    </ul>
+                    <a href="" class="btn btn-send">Sign Up</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="pricing text-center">
+                    <div class="pricing-top-box">
+                        <h3 class="pricing-title">Premium</h3>
+                        <h4 class="price">$119</h4>
+                    </div>
+                    <ul>
+                        <li>Free Download</li>
+                        <li>1000+ Softwear</li>
+                        <li>Full Access</li>
+                        <li>Free Update</li>
+                        <li>Live Support</li>
+                    </ul>
+                    <a href="" class="btn btn-send">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Client Section -->
+   
+    <!-- jQuery -->
+    <script src="{% static '/dist/js/jquery.js' %}"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static '/distjs/bootstrap.min.js' %}"></script>
+    <!-- Color Settings script -->
+    <script src="{% static '/distjs/settings-script.js' %}"></script>
+    <!-- Plugin JavaScript -->
+    <script src="{% static '/distjs/jquery.easing.min.js' %}"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="{% static '/distjs/jqBootstrapValidation.js' %}"></script>
+    
+    <!-- SmoothScroll script -->
+    <script src="{% static '/distjs/smoothscroll.js' %}"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static '/distjs/xBe.js"></script>
+    <!-- Isotope -->
+    <script type="text/javascript" src="{% static '/distjs/jquery.isotope.min.js' %}"></script>
+    <!-- Google Map -->
+    <script src="http://maps.googleapis.com/maps/api/js?extension=.js&output=embed"></script>
+    <!-- Footer Reveal scirt -->
+    <script src="{% static '/dist/js/footer-reveal.js' %}"></script>
+
+</body>
+
+</html>
