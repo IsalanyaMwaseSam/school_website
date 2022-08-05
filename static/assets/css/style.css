@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -8,6 +9,24 @@ body {
 }
 
 
+=======
+/*
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+*/
+
+
+@import url(fontawesome.css);
+@import url('<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Basic */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 a {
 	color: #3CF;
@@ -34,7 +53,10 @@ p {
 .section-heading {
     text-align: center;
     margin-bottom: 70px;
+<<<<<<< HEAD
     margin-top: -100px;
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 }
 
 .section-heading h2:before {
@@ -61,7 +83,11 @@ p {
 }
 
 
+<<<<<<< HEAD
 
+=======
+/* Buttons */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 .main-button {
     background: transparent;
@@ -85,7 +111,99 @@ p {
   display: inline-block;
   outline: none;
 }
+<<<<<<< HEAD
 
+=======
+/**#login-form{
+    display: none;
+}
+.form-box
+{
+    width:390px;
+    height:480px;
+    position:relative;
+    margin:2% auto;
+    background: rgba(0, 0, 0, 0.3);
+    overflow:hidden;
+    padding:10px;
+}
+.toggle-btn{
+    padding:10px 30px;
+    cursor:pointer;
+    background:transparent;
+    border:0;
+    outline: none;
+    position: relative;
+}
+#btn
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #F3C693;
+    border-radius: 30px;
+    transition: .5s;
+}
+.input-group-login{
+     top: 150px;
+     position: absolute;
+     width: 200px;
+     transition: .5s;
+}
+.input-group-register{
+    top:90px;
+    position:absolute;
+    width:250px;
+    transition:.5s;
+}
+.input-field{
+    width: 150px;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left:0;
+    border-top:0;
+    border-right: 0; 
+    border-bottom: 1px solid #999;
+    outline:none;
+    background: transparent;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #F3C693;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 34px 0;
+}
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login{
+   left: 50px;
+}
+#login input{
+  color: white;
+  font-size: 15;
+}
+#register{
+  left: 450px;
+}
+#register input{
+  color: white;
+  font-size: 15;
+}**/
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 a.menu-link { display: none; }
 
 @media screen and (max-width: 950px) {
@@ -597,6 +715,7 @@ header{
   }
 
 }
+<<<<<<< HEAD
 @media screen and (max-width: 350px){
   .main-header .logo a{
     font-size: 22px;
@@ -636,6 +755,8 @@ header{
 }
 
 
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 
 /* Features */
@@ -1165,14 +1286,21 @@ section.video .left-content span {
 }
 
 section.video .left-content h4 {
+<<<<<<< HEAD
     margin-top: -50px;
+=======
+    margin-top: 20px;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
     font-size: 30px;
     color: #fff;
     font-weight: 800;
     letter-spacing: 0.5px;
     line-height: 40px;
     margin-bottom: 20px;
+<<<<<<< HEAD
     margin-left: 70px;
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 }
 section.video .left-content h4 em {
     font-style: normal;
@@ -1187,7 +1315,11 @@ section.video .left-content .main-button {
   position: relative;
   width: 100%;
   max-width: 600px;
+<<<<<<< HEAD
   margin-top: 250px;
+=======
+  margin: 0px auto 0;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 }
 
 @media screen and (max-width: 767px) {
@@ -1203,7 +1335,15 @@ section.video .left-content .main-button {
 
 }
 
+<<<<<<< HEAD
 
+=======
+.video-item figure {
+  position: relative;
+  width: 100%;
+  font-size: 0;
+}
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .video-item figure img {
   width: 100%;
 }
@@ -1251,6 +1391,7 @@ section.video .left-content .main-button {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
+<<<<<<< HEAD
     
 }
 .figure{
@@ -1286,6 +1427,11 @@ section.video .left-content .main-button {
 
 
 
+=======
+}
+
+/* Magnific Popup CSS */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .mfp-bg {
   top: 0;
   left: 0;
@@ -1588,7 +1734,11 @@ button::-moz-focus-inner {
   background: #000;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Main image in popup */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 img.mfp-img {
   width: auto;
   max-width: 100%;
@@ -1600,7 +1750,11 @@ img.mfp-img {
   margin: 0 auto;
 }
 
+<<<<<<< HEAD
 
+=======
+/* The shadow behind the image */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .mfp-figure {
   line-height: 0;
 }
@@ -1657,7 +1811,13 @@ img.mfp-img {
 }
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+<<<<<<< HEAD
 
+=======
+  /**
+       * Remove all paddings around the image on small screen
+       */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
     padding-right: 0;
@@ -1732,6 +1892,10 @@ img.mfp-img {
 
 
 
+<<<<<<< HEAD
+=======
+/* Contact */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 section.contact {
     background-image: url(../images/contact-bg.jpg);
@@ -1824,7 +1988,11 @@ footer {
 footer p {
     margin-bottom: 0px;
     padding: 25px 0px;
+<<<<<<< HEAD
     color: #fff;
+=======
+    color: green;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
     font-size: 13px;
     text-transform: uppercase;
     font-weight: 600;
@@ -1898,7 +2066,11 @@ footer p a:hover {
   border: 2px solid #05ff05;
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4);
   margin: 10px;
+<<<<<<< HEAD
   color: #fff;
+=======
+  color: green;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
   opacity: 0.7;
   transition: 0.3s ease-in-out;
 }
@@ -1906,11 +2078,16 @@ footer p a:hover {
   opacity: 0.9;
   box-shadow: 0px 1px 3px 2px rgba(255, 255, 255, 0.9);
 }
+<<<<<<< HEAD
 @media screen and (max-width: 350px){
   .social a{
     margin: 2px;
   }
   
+=======
+.social h6{
+  color: #05ff05;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 }
 
 .my-button .django-submit {

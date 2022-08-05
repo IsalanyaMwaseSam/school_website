@@ -1,3 +1,35 @@
+<<<<<<< HEAD
+=======
+/* 
+	xBe by TEMPLATE STOCK
+	templatestock.co @templatestock
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Body CSS + basic theme controls
+2.0 Navbar
+3.0 Header
+4.0 Slider
+    4.1 Carousel Animation
+5.0 About Us Section
+6.0 Services Section
+7.0 Team Section
+8.0 Portfolio   Section
+    8.1 Portfolio Modals
+9.0 Pricing Section
+10.0 Clients Section
+11.0 Testimonials Section
+12.0 Contact Section
+13.0 Footer
+    13.1 Scroll to top
+----------------------------------------------------------------
+
+*/
+
+
+/* 9.0 ============  PRICING  = */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 #pricing {
     background-color: #FEFEFE;
@@ -216,10 +248,15 @@ section#testimonials .section-subheading {
 }
 
 section#contact {
+<<<<<<< HEAD
+=======
+    background-image: url(../img/backgrounds/contact-img.png);
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
     background-position: center;
     background-size: cover;
     padding-bottom: 110px;
     min-height: 900px;
+<<<<<<< HEAD
     box-shadow: none !important;
     margin-bottom: 0px !important;
 }
@@ -227,6 +264,15 @@ section#contact {
 
 
 
+=======
+   box-shadow: none !important;
+  margin-bottom: 0px !important;
+}
+}
+
+
+}
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 section#contact .section-heading {
     color: #fff !important;
 }
@@ -453,6 +499,10 @@ ul.social-buttons li a:active {
     width: 35px;
     height: 35px;
     display: block;
+<<<<<<< HEAD
+=======
+    background: #FFF url(../img/options.png)no-repeat;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
     left: -35px;
     position: absolute;
     cursor: pointer;

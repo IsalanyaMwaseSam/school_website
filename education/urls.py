@@ -13,10 +13,18 @@ urlpatterns = [
     path('education/social/', views.social, name='social'),
     path('education/theology/', views.theology, name='theology'),
     path('education/About_us/', views.about, name='about'),
+<<<<<<< HEAD
     path('education/starter/', views.starter, name='starter'),
     
     
    
     
+=======
+    path('education/application/', views.application, name='application'),
+    path('education/starter/', views.starter, name='starter'),
+    path('education/e-learning/', views.elearning, name='e-learning'),
+    
+    
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 ]

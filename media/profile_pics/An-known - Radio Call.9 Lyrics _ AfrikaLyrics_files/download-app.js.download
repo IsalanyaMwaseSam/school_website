@@ -1,0 +1,95 @@
+(function ($) {
+	'use strict';
+  
+  	// Define cookie functions
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user = getCookie("username");
+    if (user != "") {
+        alert("Welcome again " + user);
+    } else {
+        user = prompt("Please enter your name:", "");
+        if (user != "" && user != null) {
+            setCookie("username", user, 365);
+        }
+    }
+}
+
+// Create cookie if user doesn't have one
+setCookie('user_first_visited', Date.now());
+
+console.log("getCookie('user_first_visited')",getCookie('user_first_visited'));
+console.log("getCookie('user_popup_triggerred')",getCookie('user_popup_triggerred'));
+console.log("!getCookie('user_popup_triggerred')",!getCookie('user_popup_triggerred'));
+
+// Loop detecting if user visited over 30 seconds
+if (!getCookie('user_popup_triggerred')) {
+	var loopDetect = setInterval(function(){
+		var TimePast = (Date.now() - getCookie('user_first_visited')) / 1000;
+	  console.log('TimePast',TimePast);
+		if( TimePast > 30){
+		    clearInterval(loopDetect);
+		    // openDownloadAppDialog()
+			
+		}
+	}, 1000);
+}
+
+
+function openDownloadAppDialog(){
+  $('#download-app-modal').modal('show')
+	 
+}
+function closeDownloadAppDialog(){
+     console.log("close dialog");
+	$('#download-app-modal').modal('hide')
+
+	
+}
+
+    // btn more
+    $(document).on('click', '#download-app a', function(e) {
+      console.log('clicked on download box');
+	  setCookie('user_popup_triggerred', 1);
+	  fetch("/inc-download-box", {
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "X-Requested-With": "XMLHttpRequest",
+        "X-CSRF-Token":  $('meta[name="csrf-token"]').attr('content')
+      },
+      method: "post",
+      credentials: "same-origin",
+      body: JSON.stringify({
+        key: "value"
+      })
+    })
+	  var playStoreUrl = "https://play.google.com/store/apps/details?id=com.wetellafrica.afrikalyrics"
+   		window.open(playStoreUrl, '_blank').focus();
+	  });
+
+    
+})(jQuery);
+
+	

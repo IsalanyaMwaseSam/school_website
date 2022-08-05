@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import django_heroku
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 """
 Django settings for school_website project.
 
@@ -14,7 +17,11 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+<<<<<<< HEAD
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+=======
+BASE_DIR = Path(__file__).resolve().parent.parent
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 
 # Quick-start development settings - unsuitable for production
@@ -24,7 +31,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-g2(gq@ut*sasb&ej#+1nc5$e=!f^&#n=(r9i%67!n$wn9&i9rf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+<<<<<<< HEAD
 DEBUG = False
+=======
+DEBUG = True
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 ALLOWED_HOSTS = []
 
@@ -39,6 +50,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'education',
+<<<<<<< HEAD
+=======
+    'users',
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
     'crispy_forms', 
 ]
 
@@ -77,6 +92,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'school_website.wsgi.application'
 
 
+<<<<<<< HEAD
+=======
+# Database
+# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 DATABASES = {
     'default': {
@@ -90,7 +110,12 @@ DATABASES = {
 }
 
 
+<<<<<<< HEAD
 
+=======
+# Password validation
+# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -108,7 +133,12 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+<<<<<<< HEAD
 
+=======
+# Internationalization
+# https://docs.djangoproject.com/en/3.2/topics/i18n/
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 LANGUAGE_CODE = 'en-us'
 
@@ -125,12 +155,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+<<<<<<< HEAD
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, '/staticfiles/')
 
+=======
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
@@ -142,6 +178,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+<<<<<<< HEAD
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
@@ -161,3 +198,6 @@ MIDDLEWARE_CLASSES = (
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #activate django-heroku
 django_heroku.settings(locals())
+=======
+LOGIN_REDIRECT_URL = 'starter'
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23

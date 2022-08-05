@@ -1,9 +1,24 @@
+<<<<<<< HEAD
 
+=======
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/*
+ *  Owl Carousel - Core
+ */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .owl-carousel {
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
+<<<<<<< HEAD
 
+=======
+  /* position relative and z-index fix webkit rendering fonts issue */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
   position: relative;
   z-index: 1; }
   .owl-carousel .owl-stage {
@@ -11,7 +26,11 @@
     -ms-touch-action: pan-Y;
     touch-action: manipulation;
     -moz-backface-visibility: hidden;
+<<<<<<< HEAD
      }
+=======
+    /* fix firefox animation glitch */ }
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
   .owl-carousel .owl-stage:after {
     content: ".";
     display: block;
@@ -22,7 +41,11 @@
   .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
+<<<<<<< HEAD
 
+=======
+    /* fix for flashing background */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
     -webkit-transform: translate3d(0px, 0px, 0px); }
   .owl-carousel .owl-wrapper,
   .owl-carousel .owl-item {
@@ -86,10 +109,20 @@
   .owl-carousel.owl-rtl .owl-item {
     float: right; }
 
+<<<<<<< HEAD
 .no-js .owl-carousel {
   display: block; }
 
 
+=======
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .owl-carousel .animated {
   animation-duration: 1000ms;
   animation-fill-mode: both; }
@@ -109,6 +142,7 @@
   100% {
     opacity: 0; } }
 
+<<<<<<< HEAD
 
 .owl-height {
   transition: height 500ms ease-in-out; }
@@ -116,6 +150,22 @@
 
 .owl-carousel .owl-item {
  }
+=======
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out; }
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item {
+  /**
+			This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
+			calculation of the height of the owl-item that breaks page layouts
+		 */ }
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
   .owl-carousel .owl-item .owl-lazy {
     opacity: 0;
     transition: opacity 400ms ease; }
@@ -124,7 +174,13 @@
   .owl-carousel .owl-item img.owl-lazy {
     transform-style: preserve-3d; }
 
+<<<<<<< HEAD
 
+=======
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .owl-carousel .owl-video-wrapper {
   position: relative;
   height: 100%;
@@ -138,6 +194,10 @@
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
+<<<<<<< HEAD
+=======
+  background: url("owl.video.play.png") no-repeat;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;

@@ -1,4 +1,5 @@
 from django.shortcuts import render
+<<<<<<< HEAD
 from django.core.mail import send_mail
 
 
@@ -17,6 +18,14 @@ def home(request):
         From: {}
         '''.format(contact['message'], contact['email'])
         send_mail(name, message, None , recipients)
+=======
+from django.contrib.auth import authenticate, login
+
+
+app_name = 'education'
+# Create your views here.
+def home(request):
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
     return render(request, 'education/home.html', {})
 
 def computing(request):
@@ -52,11 +61,17 @@ def theology(request):
 def about(request):
     return render(request, 'education/about.html')
 
+<<<<<<< HEAD
+=======
+def application(request):
+    return render(request, 'education/application.html')
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 
 def starter(request):
     return render(request, 'education/starter.html')
 
+<<<<<<< HEAD
 
 def application(request):
     if request.method == "POST":
@@ -92,6 +107,13 @@ def application(request):
 
 
     
+=======
+def elearning(request):
+    return render(request, 'education/e-learning.html')
+
+
+
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 
 
