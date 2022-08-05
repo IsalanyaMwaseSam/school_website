@@ -1,0 +1,287 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>School Website</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static '/assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/owl.css">
+    <link rel="stylesheet" href="{% static '/assets/css/lightbox.css' %}">
+    
+<!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+  </head>
+
+<body>
+
+   
+   <!--header-->
+   <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#">BUGEMA UNIVERSITY</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li class="has-submenu"><a href="#section2">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Who we are?</a></li>
+            <li><a href="#section3">What we do?</a></li>
+            <li><a href="#section3">How it works?</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu"><a href="#">Academics</a>
+          <ul class="sub-menu">
+            <li style="text-align: center;"><a href="{% url 'graduation' %}">School Of Graduate Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'business' %}">School Of Business</a></li>
+            <li style="text-align: center;"><a href="{% url 'Computing' %}">School Of Computing & Informatics</a></li>
+            <li style="text-align: center;"><a href="{% url 'education' %}">School Of Education</a></li>
+            <li style="text-align: center;"><a href="{% url 'health' %}">School Of Health Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'social' %}">School Of Social Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'theology' %}">School Of Theology And Religious Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'growth' %}">School Of Graduate Professional Growth</a></li>
+            <li style="text-align: center;"><a href="{% url 'research' %}">School Of Intensive Research</a></li>
+            <li><a href="{% url 'research' %}">School Of Intensive Research</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6">Contact</a></li>
+      </ul>
+    </nav>
+      <div class="title">
+        <h2>SCHOOL OF SCHOOL OF HEALTH SCIENCES</h2>
+      </div>
+  </header>
+
+  <section id="content">
+    <div class="read">
+      <h2>SCHOOL OF HEALTH SCIENCES</h2>
+      <p>
+        Ag. Dean:  John K. Amoah, PhD Animal Science; MSc Animal Science (Central Luzon State University, Philip­pines); BSc Agriculture (UEAB, Kenya); Dip. Mus. Ed., Teachers’ Cert.  (Cape Coast University, Ghana).
+      </p>
+      <h3>PROGRAMS OFFERED</h3>
+      <P>
+        <ol type="1">
+          <li>Bachelor of Nursing Science (BNS)</li>
+          <li>Bachelor of Science in Food Technology and Human Nutrition ((BFNT)</li>
+          <li>Siploma in Food Science and Processing Technology (DFST)</li>
+          <li>Diploma in Nursing Science (DNS)</li>
+          <li>ertificate in Nursing (CIN)</li>
+        </ol>
+      </P>
+      <h4>DEPARTMENT</h4>
+      <p>The School of Health Sciences has two departments:
+        <ol type="1">
+          <li>Department of Nursing and Midwifery</li>          
+          <li>Department of Nutrition, Food Science and Technology</li>
+        </ol>
+      </p>
+      <h5>Program Accreditation by External Agencies</h5>
+      <p>All the programs in the School of Health Sciences have been accredited by different accreditation agencies. The Bachelor of Nursing Science (BNS) program was jointly approved and accredited by National Council for Higher Education (NCHE) and Uganda Nurses and Midwives Council (UNMC), while the Diploma and Certificate programs were licensed and accredited by Uganda Nurses and Midwives Council (UNMC), Uganda Nurses and Midwives Examination Board (UNMEB) and Business, Technical and vocational Education and Training (BTVET). The programs have also been approved and accredited by Adventist Accreditation Agency (AAA) based in Maryland, USA. On the other hand, Bachelor of Science in Food Technology and Human Nutrition ((BFNT) and Diploma in Food Science and Processing Technology (DFST) are fully accredited by NCHE.
+      </p>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="course-text">
+        <p>COURSES</p>
+        <div class="course-box">
+            <div class="single-course">
+                <img src="{% static '/assets/images/healty.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Certificate in Midwifery (UNMEB Curriculum)</h3>
+                    <hr>
+                    <p><b>Head of Department:  Rosemarie F. Cacho, RN, BSN, MAN (Liceo de Cagayan, Philippines). List of Faculty: Vevian G. Fortaleza, RN, BSN, MN, Clinical Coordinator; Ssemanda</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/heal.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Post Graduate Diploma in Public Health</h3>
+                    <hr>
+                    <p>As a discipline and a profession, Public Health is concerned with the analysis of problems and the achievement of change in order to improve th</p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/healt.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Master of Public Health (MPH)</h3>
+                    <hr>
+                    <p>Program Description As a discipline and a profession, Public Health is concerned with the analysis of problems and the achievement of change in order to</p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/Hsc.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Diploma in Food Science and Processing Technology</h3>
+                    <hr>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/he.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Diploma in Nursing Extension</h3>
+                    <hr>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/nurse.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Diploma in Nursing</h3>
+                    <hr>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/h.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Bachelor of Science in Food Technology & Human Nutrition</h3>
+                    <hr>
+                    <p><b>Study food science and human nutrition The speciality areas of food science and human nutrition are developing rapidly as technology becomes more sophisticated and the</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/hel.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Bachelor of Nursing Science</h3>
+                    <hr>
+                    <p><b>DEPARTMENT OF NURSING AND MIDWIFERY Head of Department:  Rosemarie F. Cacho, RN, BSN, MAN (Liceo de Cagayan, Philippines). List of Faculty: Vevian G. Fortaleza, RN,</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"></div>
+          <div class="social">
+            <h6>Follow us</h6>
+            <a class="list__item-link list__item-link_facebook" href="https://www.facebook.com/bugemauniv.ac.ug/?_rdc=1&amp;_rdr" target="_blank"><i class="fa fa-facebook"></i> </a>
+            <a class="list__item-link list__item-link_twitter" href="https://twitter.com/UnivBugema" target="_blank"><i class="fa fa-twitter"></i> </a>
+            <a class="list__item-link list__item-link_instagram" href="https://www.instagram.com/univbugema" target="_blank"><i class="fa fa-instagram"></i> </a>
+            <a class="list__item-link list__item-link_youtube" href="https://www.youtube.com/channel/UCNbb7bqAyDBt1AqvKuCQihQ/featured" target="_blank"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+          <p><i class="fa fa-copyright"></i> Copyright 2020 by SamTech
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static '/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static '/assets/js/isotope.min.js' %}"></script>
+    <script src="{% static '/assets/ts/js/owl-carousel.js' %}"></script>
+    <script src="{% static '/assets/js/lightbox.js' %}"></script>
+    <script src="{% static '/assets/js/tabs.js' %}"></script>
+    <script src="{% static '/assets/js/video.js' %}"></script>
+    <script src="{% static '/assets/js/slick-slider.js' %}"></script>
+    <script src="{% static '/assets/js/custom.js' %}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        /*$('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });*/
+    </script>
+</html>
+</body>
+
+
+ 

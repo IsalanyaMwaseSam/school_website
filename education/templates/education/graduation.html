@@ -1,0 +1,295 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>School Website</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static '/assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/owl.css">
+    <link rel="stylesheet" href="{% static '/assets/css/lightbox.css' %}">
+    
+<!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+  </head>
+
+<body>
+
+   
+   <!--header-->
+   <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#">BUGEMA UNIVERSITY</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li class="has-submenu"><a href="#section2">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Who we are?</a></li>
+            <li><a href="#section3">What we do?</a></li>
+            <li><a href="#section3">How it works?</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu"><a href="#">Academics</a>
+          <ul class="sub-menu">
+            <li style="text-align: center;"><a href="{% url 'graduation' %}">School Of Graduate Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'business' %}">School Of Business</a></li>
+            <li style="text-align: center;"><a href="{% url 'Computing' %}">School Of Computing & Informatics</a></li>
+            <li style="text-align: center;"><a href="{% url 'education' %}">School Of Education</a></li>
+            <li style="text-align: center;"><a href="{% url 'health' %}">School Of Health Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'social' %}">School Of Social Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'theology' %}">School Of Theology And Religious Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'growth' %}">School Of Graduate Professional Growth</a></li>
+            <li style="text-align: center;"><a href="{% url 'research' %}">School Of Intensive Research</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6">Contact</a></li>
+      </ul>
+    </nav>
+      <div class="title">
+        <h2>SCHOOL OF POST GRADUATE STUDIES</h2>
+      </div>
+  </header>
+
+  <section id="content">
+    <div class="read">
+      <h2>SCHOOL MISSION STATEMENT OF THE UNIVERSITY</h2>
+      <p>
+        To offer excellent and distinctive wholistic Christian education designed to prepare our students through training, research and scholarship</br> for productive levels of useful service to God and to society with uncompromising   integrity, honesty and loyalty.
+      </p>
+      <h3>VIEW</h3>
+      <P>
+        A self-sustaining graduate school producing skilled manpower for diverse development.
+      </P>
+      <h4>OBJECTIVES</h4>
+      <p>Guided and propelled by the general objective of backstopping Bugema University in undertaking efforts to make more meaningful contribution to the realization of the goals of national development through human resource development, the Bugema University-School of Graduate Studies trains its efforts and resources towards the achievement of the following specific objectives:
+        <ol type="1">
+          <li>To develop graduate students’ ability to undertake research or scholarly work in business administration, development studies, Counselling psychology, education management, public health, and international business.</li>          
+          <li>To develop highly trained human resources imbued with universal values and professionalism, work and discipline.</li>
+          <li>To offer programs responsive to the needs of the learners and of their communities through holistic education.</li>
+          <li>To institutionalize a system of continuing education to sustain professional growth and promote long life learning.</li>
+          <li>To establish an education network through collaborative arrangements, institutional linkages and other appropriate mechanisms to enhance the delivery of education programs and to generate awareness of and support to Bugema University-School of Graduate Studies program.</li>
+          <li>To foster a culture of performance excellence, accountability and stewardship consonant with Bugema University’s values, objectives, institutional identity and culture.</li>
+        </ol>
+      </p>
+      <h5>VALUES</h5>
+      <p>
+        <ol type="1">
+          <li>Commitment</li>
+          <li>Team spirit</li>
+          <li>Professionalism and competence</li>
+          <li>Transparency</li>
+          <li>Equity and fairness</li>
+        </ol>
+      </p>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="course-text">
+        <p>COURSES</p>
+        <div class="course-box">
+            <div class="single-course">
+                <img src="{% static '/assets/images/gra.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Doctor of Philosophy in Rural Development</h3>
+                    <hr>
+                    <p><b>Programme Name and Duration The programme name is Doctor of Philosophy in Rural Development.  The Doctor of Philosophy in Rural development program is designed to</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/grad.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Doctor of Philosophy in Environmental Management</h3>
+                    <hr>
+                    <p>Programme Name and Duration The programme name is Doctor of Philosophy in Environmental Management. This programme is designed to take a minimum of Four (4)</p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/gradu.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Doctor of Philosophy in Educational Management</h3>
+                    <hr>
+                    <p>Programme Name and Duration The programme name is Doctor of Philosophy in Educational Management. This programme is designed to take a minimum of Four (4)</p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/gradua.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Post Graduate Diploma in Public Health</h3>
+                    <hr>
+                    <p><b>As a discipline and a profession, Public Health is concerned with the analysis of problems and the achievement of change in order to improve the</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/graduat.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Master of Public Health (MPH)</h3>
+                    <hr>
+                    <p><b>Program Description As a discipline and a profession, Public Health is concerned with the analysis of problems and the achievement of change in order to</b>
+                    </p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/grduati.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Post Graduate Diploma in Information Technology (PGDIT)Post Graduate Diploma in Information Technology (PGDIT)</h3>
+                    <hr>
+                    <p><b>The programme will be taken by those students whose first degree is in IT/computer Science or related area Curriculum Structure for Post Graduate Diploma in</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/graduatio.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Bachelor of Business Computing</h3>
+                    <hr>
+                    <p><b>Bachelor of Business Computing is designed to equip students with skills in electronic computer fundamentals, problem solving and the application of computing in business.</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/gr.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Bachelor Of Science In Network Systems Administration</h3>
+                    <hr>
+                    <p><b>Bachelor of Business Computing is designed to equip students with skills in electronic computer fundamentals, problem solving and the application of computing in business.</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"></div>
+          <div class="social">
+            <h6>Follow us</h6>
+            <a class="list__item-link list__item-link_facebook" href="https://www.facebook.com/bugemauniv.ac.ug/?_rdc=1&amp;_rdr" target="_blank"><i class="fa fa-facebook"></i> </a>
+            <a class="list__item-link list__item-link_twitter" href="https://twitter.com/UnivBugema" target="_blank"><i class="fa fa-twitter"></i> </a>
+            <a class="list__item-link list__item-link_instagram" href="https://www.instagram.com/univbugema" target="_blank"><i class="fa fa-instagram"></i> </a>
+            <a class="list__item-link list__item-link_youtube" href="https://www.youtube.com/channel/UCNbb7bqAyDBt1AqvKuCQihQ/featured" target="_blank"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+          <p><i class="fa fa-copyright"></i> Copyright 2020 by SamTech
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static '/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static '/assets/js/isotope.min.js' %}"></script>
+    <script src="{% static '/assets/ts/js/owl-carousel.js' %}"></script>
+    <script src="{% static '/assets/js/lightbox.js' %}"></script>
+    <script src="{% static '/assets/js/tabs.js' %}"></script>
+    <script src="{% static '/assets/js/video.js' %}"></script>
+    <script src="{% static '/assets/js/slick-slider.js' %}"></script>
+    <script src="{% static '/assets/js/custom.js' %}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        /*$('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });*/
+    </script>
+</html>
+</body>
+
+
+ 

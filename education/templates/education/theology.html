@@ -1,0 +1,244 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>School Website</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static '/assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/owl.css">
+    <link rel="stylesheet" href="{% static '/assets/css/lightbox.css' %}">
+    
+<!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+  </head>
+
+<body>
+
+   
+   <!--header-->
+   <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#">BUGEMA UNIVERSITY</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li class="has-submenu"><a href="#section2">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Who we are?</a></li>
+            <li><a href="#section3">What we do?</a></li>
+            <li><a href="#section3">How it works?</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu"><a href="#">Academics</a>
+          <ul class="sub-menu">
+            <li style="text-align: center;"><a href="{% url 'graduation' %}">School Of Graduate Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'business' %}">School Of Business</a></li>
+            <li style="text-align: center;"><a href="{% url 'Computing' %}">School Of Computing & Informatics</a></li>
+            <li style="text-align: center;"><a href="{% url 'education' %}">School Of Education</a></li>
+            <li style="text-align: center;"><a href="{% url 'health' %}">School Of Health Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'social' %}">School Of Social Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'theology' %}">School Of Theology And Religious Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'growth' %}">School Of Graduate Professional Growth</a></li>
+            <li style="text-align: center;"><a href="{% url 'research' %}">School Of Intensive Research</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6">Contact</a></li>
+      </ul>
+    </nav>
+      <div class="title">
+        <h2>SCHOOL OF THEOLOGY<br> & RELIGIOUS STUDIES</h2>
+      </div>
+  </header>
+
+  <section id="content">
+    <div class="read">
+      <h2>MISSION STATEMENT</h2>
+      <p>
+       The school of Theology and Religious Studies exists to provide spiritual, academic, physical and social development in preparing<br>
+       pastors,, evangelists, teachers, counselors, chaplains, leaders, community development promoters and others<br>
+       for excellence in service of Seventh-day Adventist Church and the world community
+      </p>
+      <h3>OBJECTIVES:</h3>
+      <P>
+        <ol type="1">
+          <li>To equip the students with the necessary skills for the gospel ministry.</li>
+          <li>To furnish the students with the basic tools of interpreting Scripture within the historoical grammatical context.</li>
+          <li>To establish a foundation for further theological studies.</li>
+          <li>To shape theological education within African context.</li>
+        </ol>
+      </P>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="course-text">
+        <p>COURSES</p>
+        <div class="course-box">
+            <div class="single-course">
+                <img src="{% static '/assets/images/computing.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Bachelor of Arts in religious Studies with Urban Ministry</h3>
+                    <hr>
+                    <p><b>This program is the basic entrance qualification for ministry in the Seventh-day Adventist Church. Its contents reflect the church's conviction of successful ministry</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/COMPSCIE.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Bachelor of Arts in Religious Studies with Evangelism and Church Growth</h3>
+                    <hr>
+                    <p>The course equips the students with the necessary skills for the gospel ministry.</p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/postit.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Bachelor of Arts in Religious Studies with Development Ministry</h3>
+                    <hr>
+                    <p>The course equips the students with the necessary skills for the gospel ministry.</p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/MasterIT.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Bachelor of Arts in Religious Studies with Chaplaincy</h3>
+                    <hr>
+                    <p><b>The program prepares students as chaplains in secondary schools, colleges, universities, in community agencies, correctional institutions, healthcare facilities, military forces and others</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/Lib.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Bachelor of Theology</h3>
+                    <hr>
+                    <p><b>The course equips the students with the necessary skills for the gospel ministry.</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"></div>
+          <div class="social">
+            <h6>Follow us</h6>
+            <a class="list__item-link list__item-link_facebook" href="https://www.facebook.com/bugemauniv.ac.ug/?_rdc=1&amp;_rdr" target="_blank"><i class="fa fa-facebook"></i> </a>
+            <a class="list__item-link list__item-link_twitter" href="https://twitter.com/UnivBugema" target="_blank"><i class="fa fa-twitter"></i> </a>
+            <a class="list__item-link list__item-link_instagram" href="https://www.instagram.com/univbugema" target="_blank"><i class="fa fa-instagram"></i> </a>
+            <a class="list__item-link list__item-link_youtube" href="https://www.youtube.com/channel/UCNbb7bqAyDBt1AqvKuCQihQ/featured" target="_blank"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+          <p><i class="fa fa-copyright"></i> Copyright 2020 by SamTech
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static '/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static '/assets/js/isotope.min.js' %}"></script>
+    <script src="{% static '/assets/ts/js/owl-carousel.js' %}"></script>
+    <script src="{% static '/assets/js/lightbox.js' %}"></script>
+    <script src="{% static '/assets/js/tabs.js' %}"></script>
+    <script src="{% static '/assets/js/video.js' %}"></script>
+    <script src="{% static '/assets/js/slick-slider.js' %}"></script>
+    <script src="{% static '/assets/js/custom.js' %}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+                /*$('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });*/
+    </script>
+</html>
+</body>
+
+
+ 

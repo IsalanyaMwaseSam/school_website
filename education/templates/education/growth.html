@@ -1,0 +1,303 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>School Website</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static '/assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/owl.css">
+    <link rel="stylesheet" href="{% static '/assets/css/lightbox.css' %}">
+    
+<!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+  </head>
+
+<body>
+
+   
+   <!--header-->
+   <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#">BUGEMA UNIVERSITY</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li class="has-submenu"><a href="#section2">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Who we are?</a></li>
+            <li><a href="#section3">What we do?</a></li>
+            <li><a href="#section3">How it works?</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu"><a href="#">Academics</a>
+          <ul class="sub-menu">
+            <li style="text-align: center;"><a href="{% url 'graduation' %}">School Of Graduate Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'business' %}">School Of Business</a></li>
+            <li style="text-align: center;"><a href="{% url 'Computing' %}">School Of Computing & Informatics</a></li>
+            <li style="text-align: center;"><a href="{% url 'education' %}">School Of Education</a></li>
+            <li style="text-align: center;"><a href="{% url 'health' %}">School Of Health Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'social' %}">School Of Social Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'theology' %}">School Of Theology And Religious Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'growth' %}">School Of Graduate Professional Growth</a></li>
+            <li style="text-align: center;"><a href="{% url 'research' %}">School Of Intensive Research</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6">Contact</a></li>
+      </ul>
+    </nav>
+      <div class="title">
+        <h2>SCHOOL OF COMPUTING </br>& INFORMATICS</h2>
+      </div>
+  </header>
+
+  <section id="content">
+    <div class="read">
+      <h2>VIEW POINT</h2>
+      <p>
+        Welcome to the Bugema University School of Computing and Informatics (SCI). The schools was upgraded from the department of Information Technology established 25 years ago under the School of Business. The SCI has evolved to offer both undergraduate and graduate programs that are demand driven and IT industry focused, and encourages collaborative multidisciplinary research. The faculty and students in the SCI are actively engaged in computer and information science research and development through computer laboratory projects, community projects and industrial placements.  The SCI believes in developing the mind through critical thinking to enhance innovation among faculty, staff and students.</br></br>
+
+        The world ecosystems are faced with complex challenges that demand no-traditional integrative thinking between computer scientists, data and information scientists, social scientists and other domain experts. The SCI prepares professionals that can harness the potentials of computer and information sciences to provide relevant solutions. The SCI faculty and students are engaged in ongoing research projects and development of computer solutions in the areas of education, health, public administration, information management, ecommerce, and agriculture. The undergraduate and graduate programs offered in both Blended and Online Learning environments focus on Information Systems, Computer Networks Security and Systems Engineering,</br></br>
+
+        Whether you are a prospective or continuing student, a prospective industrial partner, may be an academician, you are warmly welcome to explore the content on these pages. The information provided will enrich your understanding of the SCI activities in relation to programs, research, project, collaborations and community engagements.</br></br>
+
+        <b>Vision</b>: To create research-based expertise that enables modeling real-life computer technology solutions to enhance decision making and systems engineering.</br></br>
+
+        <b>Mission:</b> To engage in computer and information science research and training that promote  engineering of multi-disciplinary technological solutions responsive to various    community needs.
+
+      </p>
+      <h3>PROGRAMS OFFERED</h3>
+      <P>
+        <ol type="1">
+          <li>Bachelor of Nursing Science (BNS)</li>
+          <li>Bachelor of Science in Food Technology and Human Nutrition ((BFNT)</li>
+          <li>Siploma in Food Science and Processing Technology (DFST)</li>
+          <li>Diploma in Nursing Science (DNS)</li>
+          <li>ertificate in Nursing (CIN)</li>
+        </ol>
+      </P>
+      <h4>DEPARTMENT</h4>
+      <p>The School of Health Sciences has two departments:
+        <ol type="1">
+          <li>Department of Nursing and Midwifery</li>          
+          <li>Department of Nutrition, Food Science and Technology</li>
+        </ol>
+      </p>
+      <h5>PROGRAM'S DURATION</h5>
+      <p>All degree programs offered at undergraduate take three years, Diploma programs take two years. However, international students who are required to take four years, may be requested to complete a Higher Education certificate for one year before joining the main degree program. All graduate degree programs take two years, and the Post graduate diploma take one and half years.
+      </p>
+      <h6>INTAKES</h6>
+      <p>
+        The School has three intakes in any given academic year.
+        August Intake (Starting of the academic year)
+        January Intake
+        May Intake
+        Applications are Ongoing. Apply<a href="#">:https://bugemauniv.ac.ug/application-form/</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="course-text">
+        <p>COURSES</p>
+        <div class="course-box">
+            <div class="single-course">
+                <img src="{% static '/assets/images/computing.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Certificate in Midwifery (UNMEB Curriculum)</h3>
+                    <hr>
+                    <p><b>Head of Department:  Rosemarie F. Cacho, RN, BSN, MAN (Liceo de Cagayan, Philippines). List of Faculty: Vevian G. Fortaleza, RN, BSN, MN, Clinical Coordinator; Ssemanda</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/COMPSCIE.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Post Graduate Diploma in Public Health</h3>
+                    <hr>
+                    <p>As a discipline and a profession, Public Health is concerned with the analysis of problems and the achievement of change in order to improve th</p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/postit.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Master of Public Health (MPH)</h3>
+                    <hr>
+                    <p>Program Description As a discipline and a profession, Public Health is concerned with the analysis of problems and the achievement of change in order to</p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/MasterIT.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Diploma in Food Science and Processing Technology</h3>
+                    <hr>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/SE.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Diploma in Nursing Extension</h3>
+                    <hr>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/Lib.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Diploma in Nursing</h3>
+                    <hr>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/bus.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Bachelor of Science in Food Technology & Human Nutrition</h3>
+                    <hr>
+                    <p><b>Study food science and human nutrition The speciality areas of food science and human nutrition are developing rapidly as technology becomes more sophisticated and the</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="single-course">
+                <img src="{% static '/assets/images/NETWORK.jpg' %}">
+                <div class="overlay"></div>
+                <div class="course-desc">
+                    <h3>Bachelor of Nursing Science</h3>
+                    <hr>
+                    <p><b>DEPARTMENT OF NURSING AND MIDWIFERY Head of Department:  Rosemarie F. Cacho, RN, BSN, MAN (Liceo de Cagayan, Philippines). List of Faculty: Vevian G. Fortaleza, RN,</b></p>
+                </div>
+                <div class="text-button-info">
+                    <a href="#"><b>More Details</b><i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"></div>
+          <div class="social">
+            <h6>Follow us</h6>
+            <a class="list__item-link list__item-link_facebook" href="https://www.facebook.com/bugemauniv.ac.ug/?_rdc=1&amp;_rdr" target="_blank"><i class="fa fa-facebook"></i> </a>
+            <a class="list__item-link list__item-link_twitter" href="https://twitter.com/UnivBugema" target="_blank"><i class="fa fa-twitter"></i> </a>
+            <a class="list__item-link list__item-link_instagram" href="https://www.instagram.com/univbugema" target="_blank"><i class="fa fa-instagram"></i> </a>
+            <a class="list__item-link list__item-link_youtube" href="https://www.youtube.com/channel/UCNbb7bqAyDBt1AqvKuCQihQ/featured" target="_blank"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+          <p><i class="fa fa-copyright"></i> Copyright 2020 by SamTech
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static '/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static '/assets/js/isotope.min.js' %}"></script>
+    <script src="{% static '/assets/ts/js/owl-carousel.js' %}"></script>
+    <script src="{% static '/assets/js/lightbox.js' %}"></script>
+    <script src="{% static '/assets/js/tabs.js' %}"></script>
+    <script src="{% static '/assets/js/video.js' %}"></script>
+    <script src="{% static '/assets/js/slick-slider.js' %}"></script>
+    <script src="{% static '/assets/js/custom.js' %}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        /*$('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });*/
+    </script>
+</html>
+</body>
+
+
+ 

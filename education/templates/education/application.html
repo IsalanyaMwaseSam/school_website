@@ -1,0 +1,314 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="../../maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <!-- Bootstrap core CSS -->
+     <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+     <!-- Additional CSS Files -->
+     <link rel="stylesheet" href="{% static '/assets/css/fontawesome.css' %}">
+     <link rel="stylesheet" href="{% static '/assets/css/style.css' %}">
+     <link rel="stylesheet" href="{% static '/assets/css/owl.css">
+     <link rel="stylesheet" href="{% static '/assets/css/lightbox.css' %}">
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7575984816681478"
+     crossorigin="anonymous"></script>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  margin-top: 100px;
+} 
+</style>
+</head>
+<style>
+body {
+    /*background-image: url("/static/assets/images/bu.jpg");*/
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover; 
+    background-color: hsla(89, 43%, 51%, 0.3);
+    
+    
+}
+</style>
+<body>
+     
+   <!--header-->
+   <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#">BUGEMA UNIVERSITY</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu" style="@media screen and (max-width: 950px) {}">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li class="has-submenu"><a href="#section2">About Us</a>
+        <li class="#section2"><a href="{% url 'application' %}">Apply Now</a>
+        <li class="has-submenu"><a href="#">Academics</a>
+          <ul class="sub-menu">
+            <li style="text-align: center;"><a href="{% url 'graduation' %}">School Of Graduate Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'business' %}">School Of Business</a></li>
+            <li style="text-align: center;"><a href="{% url 'Computing' %}">School Of Computing & Informatics</a></li>
+            <li style="text-align: center;"><a href="{% url 'education' %}">School Of Education</a></li>
+            <li style="text-align: center;"><a href="{% url 'health' %}">School Of Health Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'social' %}">School Of Social Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'theology' %}">School Of Theology And Religious Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'growth' %}">School Of Graduate Professional Growth</a></li>
+            <li style="text-align: center;"><a href="{% url 'research' %}">School Of Intensive Research</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6">Contact</a></li>
+      </ul>
+    </nav>
+    </header>
+
+<h1 id="myHeader">APPLICATION FORM</h1>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+-->
+
+<h3 style="padding-left: 20px; text-align: center;">NOTE: Certified copies of academic transcript, copies of both ‘0’ level and ‘A’ level result slips/Certificates, valid identification (driving permit, passport, current employer ID card or ID card from your previous institution) should be attached to this form. We shall need the originals of the above copies at registration.</h3>
+<form action="" method="post">
+    {% csrf_token %}
+<h3 style="padding-left: 20px;">Study Location</h3>
+<div style="padding-left: 20px; width: 80%;" class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupSelect01">Study Location</label>
+    <select class="form-select" id="inputGroupSelect01" name="campus">
+      <option name="campus" selected>Choose...</option>
+      <option value="1">Main Campus</option>
+      <option value="2">Kampala Campus</option>
+      <option value="3">Mbale Campus</option>
+      <option value="3">Arua Campus</option>
+      <option value="3">Kasese Campus</option>
+    </select>
+</div>
+
+<h3 style="padding-left: 20px;">Study Time</h3>
+<div style="padding-left: 20px; width: 80%;" class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupSelect01">Study Time</label>
+    <select class="form-select" id="inputGroupSelect01">
+      <option selected>Choose...</option>
+      <option name="study" value="1">Day - Kampala Campus</option>
+      <option name="study" value="2">Regular - Main Campus</option>
+      <option name="study" value="3">Evening</option>
+      <option name="study" value="3">In-Service - Holiday</option>
+      <option name="study" value="3">Weekend - Master</option>
+    </select>
+</div>
+
+<h3 style="padding-left: 20px;">Select Level</h3>
+<div style="padding-left: 20px; width: 80%;">
+<input style="padding-left: 10px;" type="radio" name="undergraduate">Undergraduate<br>
+<input style="padding-left: 10px;" type="radio" name="">Postgraduate<br>
+<h3 style="padding-left: 20px;">Applicants Personal Information</h3>
+</div>
+
+<div style="padding-left: 20px; width: 80%;" class="input-group flex-nowrap">
+    <span style="padding-left: 20px;" class="input-group-text" id="addon-wrapping">Sur Name</span>
+    <input style="padding-left: 10px;" type="text" name="first_name" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" required>
+</div>
+</br>
+<div style="padding-left: 20px; width: 80%;" class="input-group flex-nowrap">
+    <span style="padding-left: 20px;" class="input-group-text" id="addon-wrapping">Other Names</span>
+    <input style="padding-left: 10px;" type="text" name="other_names" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" required>
+</div>
+
+<h3 style="padding-left: 20px;">Courses</h3>
+<div style="padding-left: 20px; width: 80%;" class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupSelect01">Courses</label>
+    <select class="form-select" id="inputGroupSelect01" name="course">
+      <option name="course" selected>Choose...</option>
+    </select>
+</div>
+
+
+
+<h3 style="padding-left: 20px;" >Gender</h3>
+<div style="padding-left: 20px;">
+<input style="padding-left: 20px;" type="radio" name="male">Male<br>
+<input style="padding-left: 10px;" type="radio" name="female">Female<br>
+</div>
+
+
+<h3 style="padding-left: 20px; width: 80%;">Date Of Birth</h3>
+<div style="padding-left: 20px;">
+<div style="padding-left: 20px;" class="input-group flex-nowrap"></div>
+    <input style="padding-left: 10px; width: 80%;" type="date" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" name="Date_of_birth" required>
+</div>
+</div>
+
+<h3 style="padding-left: 20px; width: 80%;">Nationality</h3>
+<div style="padding-left: 20px;">
+<div style="padding-left: 20px;" class="input-group flex-nowrap"></div>
+    <input style="padding-left: 10px ; width: 80%;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" name="nationality" required>
+</div>
+</div>
+
+<h3 style="padding-left: 20px;">Country Of Residence</h3>
+<div style="padding-left: 20px;">
+<div style="padding-left: 20px;" class="input-group flex-nowrap"></div>
+    <input style="padding-left: 10px; width: 80%;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" name="residence" required>
+</div>
+</div>
+
+<h3 style="padding-left: 20px;">Telephone Number</h3>
+<div style="padding-left: 20px;">
+<div style="padding-left: 20px;" class="input-group flex-nowrap"></div>
+    <input style="padding-left: 10px; width: 80%;" type="telNo" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+</div>
+</div>
+
+<h3 style="padding-left: 20px;">Email</h3>
+<div style="padding-left: 20px;">
+<div style="padding-left: 20px;" class="input-group flex-nowrap"></div>
+    <input style="padding-left: 10px; width: 80%;" type="email" class="form-control" placeholder="xyz@gmail.com " aria-label="Username" aria-describedby="addon-wrapping" name="email" required>
+</div>
+</div>
+
+<h3 style="padding-left: 20px;">Alternative Contact</h3>
+<div style="padding-left: 20px; width: 80%;" class="input-group flex-nowrap">
+    <span style="padding-left: 20px;" class="input-group-text" id="addon-wrapping">Name</span>
+    <input style="padding-left: 10px;" type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" name="other_contact" required>
+</div>
+
+<h3 style="padding-left: 20px; width: 80%;">Academics</h3>
+<h4 style="padding-left: 20px;">Attach a scanned copy of the UCE certificate or equivalent</h4>
+<div style="padding-left: 20px; "class="mb-3">
+    <input style="padding-left: 10px; width: 80%;" class="form-control" type="file" id="formFile" name="file1">
+</div>
+
+<h4 style="padding-left: 20px; width: 80%;">Attach a scanned copy of the UACE certificate or equivalent</h4>
+<div style="padding-left: 20px; width: 80%;"class="mb-3">
+    <input style="padding-left: 10px;" class="form-control" type="file" id="formFile" name="file2">
+</div>
+
+<h4 style="padding-left: 20px; width: 80%;">Other relevant qualifications</h4>
+<div style="padding-left: 20px; width: 80%;"class="mb-3">
+    <input style="padding-left: 10px;" class="form-control" type="file" id="formFile" name="file3">
+</div>
+<div style="padding-left: 20px;">
+<h4 style="padding-left: 20px;">Where did you learn about Bugema University?</h4>
+<input style="padding-left: 20px;" type="radio" name="where">Social Media<br>
+<input style="padding-left: 20px;" type="radio" name="where">Search Engine<br>
+<input style="padding-left: 20px;" type="radio" name="where">Email<br>
+<input style="padding-left: 20px;" type="radio" name="where">Flyers<br>
+<input style="padding-left: 20px;" type="radio" name="where">Radio<br>
+<input style="padding-left: 20px;" type="radio" name="where">Magazine<br>
+<input style="padding-left: 20px;" type="radio" name="where">Event<br>
+<input style="padding-left: 20px;" type="radio" name="where">Personal Reference<br>
+<input style="padding-left: 20px;" type="radio" name="where">Agent<br>
+<input style="padding-left: 20px;" type="radio" name="where">Media 7<br>
+<input style="padding-left: 20px;" type="radio" name="where">Other<br>
+<br>
+<br>
+</div>
+
+<div style="padding-left: 20px; margin-bottom: 50px;" class="my-button">
+    <input type="submit" value="Submit">
+</div>
+</form>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"></div>
+        <div class="social">
+          <h6>Follow us</h6>
+          <a class="list__item-link list__item-link_facebook" href="https://www.facebook.com/bugemauniv.ac.ug/?_rdc=1&amp;_rdr" target="_blank"><i class="fa fa-facebook"></i> </a>
+          <a class="list__item-link list__item-link_twitter" href="https://twitter.com/UnivBugema" target="_blank"><i class="fa fa-twitter"></i> </a>
+          <a class="list__item-link list__item-link_instagram" href="https://www.instagram.com/univbugema" target="_blank"><i class="fa fa-instagram"></i> </a>
+          <a class="list__item-link list__item-link_youtube" href="https://www.youtube.com/channel/UCNbb7bqAyDBt1AqvKuCQihQ/featured" target="_blank"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+        <p><i class="fa fa-copyright"></i> Copyright 2020 by SamTech
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="{% static '/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static '/assets/js/isotope.min.js' %}"></script>
+    <script src="{% static '/assets/ts/js/owl-carousel.js' %}"></script>
+    <script src="{% static '/assets/js/lightbox.js' %}"></script>
+    <script src="{% static '/assets/js/tabs.js' %}"></script>
+    <script src="{% static '/assets/js/video.js' %}"></script>
+    <script src="{% static '/assets/js/slick-slider.js' %}"></script>
+    <script src="{% static '/assets/js/custom.js' %}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        /*$('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });*/
+    </script>
+</body>
+</html>

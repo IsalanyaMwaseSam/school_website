@@ -1,0 +1,497 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>School Website</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{% static '/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static '/assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/assets/css/owl.css">
+    <link rel="stylesheet" href="{% static '/assets/css/lightbox.css' %}">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7575984816681478"
+     crossorigin="anonymous"></script>
+<!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#">BUGEMA UNIVERSITY</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Home</a></li>
+        <li class="#section2"><a href="{% url 'application' %}">Apply Now</a>
+        </li>
+        <li class="has-submenu"><a href="#">Academics</a>
+          <ul class="sub-menu">
+            <li style="text-align: center;"><a href="{% url 'graduation' %}">School Of Graduate Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'business' %}">School Of Business</a></li>
+            <li style="text-align: center;"><a href="{% url 'Computing' %}">School Of Computing & Informatics</a></li>
+            <li style="text-align: center;"><a href="{% url 'education' %}">School Of Education</a></li>
+            <li style="text-align: center;"><a href="{% url 'health' %}">School Of Health Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'social' %}">School Of Social Sciences</a></li>
+            <li style="text-align: center;"><a href="{% url 'theology' %}">School Of Theology And Religious Studies</a></li>
+            <li style="text-align: center;"><a href="{% url 'growth' %}">School Of Graduate Professional Growth</a></li>
+            <li style="text-align: center;"><a href="{% url 'research' %}">School Of Intensive Research</a></li>
+          </ul>
+        </li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="#section6" id="cont">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+ 
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video style="width: 100%;" muted loop id="bg-video">
+          <source src="{% static '/assets/images/course-video.mp4' %}" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="caption">
+            {% if messages %}
+              {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+              <h2><em>WELCOME TO BUGEMA UNIVERSITY</em> </h2>
+              <img style="z-index: -500;"src= "{% static '/assets/images/bu.jpg' %}">
+      </div>
+  </section>
+  
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Your Number One University</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Best Education</a></li>
+              <li><a href='#tabs-2'>Top Management</a></li>
+              <li><a href='#tabs-3'>Quality Service</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static '/assets/images/project.jpg' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Best Education</h4>
+                    <p>We have a condusive environment for our students to study. We provide the best education for our students.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static '/assets/images/choose-us-image-02.png' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Top Level</h4>
+                    <p>Excellence is the key priority in Bugema University. We ensure that our students get the best services and education here</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static '/assets/images/choose-us-image-03.png' %}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Quality Service</h4>
+                    <p>Bugema University is committed to equal opportunuty and doesn't discriminate against qualified persons based on gender, sex, religion or nationality</p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section coming-soon" data-section="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-xs-12">
+          <div class="continer centerIt">
+            <div>
+              <h4>Register <em>For online courses</em></h4>
+              <div class="counter">
+
+                <div class="days">
+                  <div class="value">00</div>
+                  <span>Days</span>
+                </div>
+
+                <div class="hours">
+                  <div class="value">00</div>
+                  <span>Hours</span>
+                </div>
+
+                <div class="minutes">
+                  <div class="value">00</div>
+                  <span>Minutes</span>
+                </div>
+
+                <div class="seconds">
+                  <div class="value">00</div>
+                  <span>Seconds</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="right-content">
+            <div class="top-content">
+              <h6>Register your free account and <em>get immediate</em> access to online courses</h6>
+            </div>
+            <form id="contact" action="" method="get">
+              <div class="row">
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="button">Get it now</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section courses" data-section="section4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Why Choose Bugema University?</h2>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="{% static '/assets/images/graduation.jpg' %}" alt="Course #1">
+            <div class="down-content">
+              <h4>Excellence</h4>
+              <p>At Bugema University our motto is to instill excellence in our students. We provide our students the best and equip them with knowledge and skills
+              </p>
+              <div class="author-image">
+                <img src="{% static '/assets/images/author-01.png' %}" alt="Author 1">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static '/assets/images/computing.jpg' %}" alt="Course #2">
+            <div class="down-content">
+              <h4>Information Technology</h4>
+              <p>At Bugema University we have all the equipmments to ensure that our students can properly be equipped with the knowledge to help them in this technological world.</p>
+              <div class="author-image">
+                <img src="{% static '/assets/images/author-02.png' %}" alt="Author 2">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static '/assets/images/health.jpg' %}" alt="Course #3">
+            <div class="down-content">
+              <h4>Health Sciences</h4>
+              <p>At Bugema University we train our future nurses and doctors with the skills needed. We also have a hospital that provides services both to community and students,well equipped with the tools and skilled medical workers.</p>
+              <div class="author-image">
+                <img src="{% static '/assets/images/author-03.png' %}" alt="Author 3">
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img style="width: 250px;" src="{% static '/assets/images/informatics.jpg' %}" alt="Course #4">
+            <div class="down-content">
+              <h4>Communications</h4>
+              <p>Training the next generation to pass on information that will impact their countries in a positive and godly way</p>
+              <div class="author-image">
+                <img src="{% static '/assets/images/author-04.png' %}" alt="Author 4">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static '/assets/images/theology.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Theology</h4>
+              <p>At Bugema University we do not only look at students education but also help them develop and grow in their spiritual life</p>
+              <div class="author-image">
+                <img src="{% static '/assets/images/students.jpg' %}" alt="">
+              </div>
+              <div class="text-button-pay">
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static '/assets/images/sports.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Sports</h4>
+              <p>At Bugema University, we recognize talents and help our students build them and expose them to the field. We have basketball, volleyball, football, rugby</p>
+              <div class="author-image">
+                <img src="{% static '/assets/images/lecturers.jpg' %}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img style="width: 285px;" src="{% static '/assets/images/cover.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>E-Learning</h4>
+              <p>As technology is evolving rapidly, new methods of learning are coming up. One of the recent ones is E-learning.As Bugema University are adapting to these and we have an effecient e-learning system now</p>
+              <div class="author-image">
+                <img src="{% static '/assets/images/lect.jpg' %}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static '/assets/images/Scholarships.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Scholarships</h4>
+              <p>At Bugema University we offere students scholarships based on various aspects.Sports scholarsips and educational Scholarships are all given out without discrimination</p>
+              <div class="author-image">
+                <img src="{% static '/assets/images/finalist.jpg' %}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static '/assets/images/business.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Business</h4>
+              <p>Our business department has various courses for students who want to embark on their business careers.</br>
+                We are here to guide them through their studies and mold better businessmen for the future.</p>
+              <div class="author-image">
+                <img src="{% static '/assets/images/au.jpg' %}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static '/assets/images/hostels.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Accomodation</h4>
+              <p>Bugema University has many hostels and accomodation places strategically located near the campus and with all the services.</p>
+              <div class="author-image">
+                <img src="{% static '/assets/images/comment.jpg' %}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="{% static '/assets/images/lecturers.jpg' %}" alt="">
+            <div class="down-content">
+              <h4>Teaching Staff</h4>
+              <p>At Bugema University we have a large teaching staff of both experienced and the young talented who are able to pass on what they know effeciently to our studets.</p>
+              <div class="author-image">
+                <img src="{% static '/assets/images/auth.jpg' %}" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section video" data-section="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <div class="left-content">
+            <h4>Watch the video to learn more about</br><em>Bugema University</em></h4>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <article class="video-item">
+        
+            <div class="figure">
+              <iframe width="500" height="315" src="https://www.youtube.com/embed/97A3QvVIYcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Let’s Keep In Touch</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+        
+        <!-- Do you need a working HTML contact-form script?
+                	
+                    Please visit https://templatemo.com/contact page -->
+                    
+          <form style="margin-left: 5px;"id="contact" action="" method="post">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-6">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+              </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="button">Send Message Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="map">
+            <iframe width="300" height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6206770742956!2d32.64156371409373!3d0.5703006637444403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177c4be209db538d%3A0xe4ac675b7d218fc9!2sBugema%20University!5e0!3m2!1sen!2sug!4v1626777926688!5m2!1sen!2sug" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"></div>
+          <div class="social">
+            <h6 style="color: white;">Follow us</h6>
+            <a class="list__item-link list__item-link_facebook" href="https://www.facebook.com/bugemauniv.ac.ug/?_rdc=1&amp;_rdr" target="_blank"><i class="fa fa-facebook"></i> </a>
+            <a class="list__item-link list__item-link_twitter" href="https://twitter.com/UnivBugema" target="_blank"><i class="fa fa-twitter"></i> </a>
+            <a class="list__item-link list__item-link_instagram" href="https://www.instagram.com/univbugema" target="_blank"><i class="fa fa-instagram"></i> </a>
+            <a class="list__item-link list__item-link_youtube" href="https://www.youtube.com/channel/UCNbb7bqAyDBt1AqvKuCQihQ/featured" target="_blank"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+          <p><i class="fa fa-copyright"></i> Copyright 2020 by SamTech
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="{% static '/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static '/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static '/assets/js/isotope.min.js' %}"></script>
+    <script src="{% static '/assets/ts/js/owl-carousel.js' %}"></script>
+    <script src="{% static '/assets/js/lightbox.js' %}"></script>
+    <script src="{% static '/assets/js/tabs.js' %}"></script>
+    <script src="{% static '/assets/js/video.js' %}"></script>
+    <script src="{% static '/assets/js/slick-slider.js' %}"></script>
+    <script src="{% static '/assets/js/custom.js' %}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        function checkSection() {
+        document.getElementById("cont").innerHTML = showSection;
+        }
+
+        /*$('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });*/
+    </script>
+</body>
+</html>
