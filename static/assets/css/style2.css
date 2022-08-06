@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 /* 
 	xBe by TEMPLATE STOCK
 	templatestock.co @templatestock
@@ -29,6 +32,9 @@
 
 
 /* 9.0 ============  PRICING  = */
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 #pricing {
@@ -249,6 +255,10 @@ section#testimonials .section-subheading {
 
 section#contact {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    background-image: url(../img/backgrounds/contact-img.png);
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
     background-image: url(../img/backgrounds/contact-img.png);
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -256,6 +266,7 @@ section#contact {
     background-size: cover;
     padding-bottom: 110px;
     min-height: 900px;
+<<<<<<< HEAD
 <<<<<<< HEAD
     box-shadow: none !important;
     margin-bottom: 0px !important;
@@ -265,6 +276,8 @@ section#contact {
 
 
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
    box-shadow: none !important;
   margin-bottom: 0px !important;
 }
@@ -272,6 +285,9 @@ section#contact {
 
 
 }
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 section#contact .section-heading {
     color: #fff !important;
@@ -500,6 +516,10 @@ ul.social-buttons li a:active {
     height: 35px;
     display: block;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    background: #FFF url(../img/options.png)no-repeat;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
     background: #FFF url(../img/options.png)no-repeat;
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23

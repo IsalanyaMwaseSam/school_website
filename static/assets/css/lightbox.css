@@ -1,7 +1,11 @@
 html.lb-disable-scrolling {
   overflow: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
  
+=======
+  /* Position fixed required for iOS. Just putting overflow: hidden; on the body is not enough. */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
   /* Position fixed required for iOS. Just putting overflow: hidden; on the body is not enough. */
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23

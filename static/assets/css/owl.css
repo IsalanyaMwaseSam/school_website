@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -9,13 +12,20 @@
 /*
  *  Owl Carousel - Core
  */
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .owl-carousel {
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+  /* position relative and z-index fix webkit rendering fonts issue */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
   /* position relative and z-index fix webkit rendering fonts issue */
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -27,7 +37,11 @@
     touch-action: manipulation;
     -moz-backface-visibility: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
      }
+=======
+    /* fix firefox animation glitch */ }
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
     /* fix firefox animation glitch */ }
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -42,7 +56,11 @@
     position: relative;
     overflow: hidden;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+    /* fix for flashing background */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
     /* fix for flashing background */
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -110,11 +128,14 @@
     float: right; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .no-js .owl-carousel {
   display: block; }
 
 
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 /* No Js */
 .no-js .owl-carousel {
   display: block; }
@@ -122,6 +143,9 @@
 /*
  *  Owl Carousel - Animate Plugin
  */
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .owl-carousel .animated {
   animation-duration: 1000ms;
@@ -143,6 +167,7 @@
     opacity: 0; } }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .owl-height {
   transition: height 500ms ease-in-out; }
@@ -151,6 +176,8 @@
 .owl-carousel .owl-item {
  }
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 /*
  * 	Owl Carousel - Auto Height Plugin
  */
@@ -165,6 +192,9 @@
 			This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
 			calculation of the height of the owl-item that breaks page layouts
 		 */ }
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
   .owl-carousel .owl-item .owl-lazy {
     opacity: 0;
@@ -175,7 +205,13 @@
     transform-style: preserve-3d; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 /*
  * 	Owl Carousel - Video Plugin
@@ -195,6 +231,10 @@
   margin-left: -40px;
   margin-top: -40px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  background: url("owl.video.play.png") no-repeat;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
   background: url("owl.video.play.png") no-repeat;
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23

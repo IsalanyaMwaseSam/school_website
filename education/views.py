@@ -1,5 +1,6 @@
 from django.shortcuts import render
 <<<<<<< HEAD
+<<<<<<< HEAD
 from django.core.mail import send_mail
 
 
@@ -19,12 +20,17 @@ def home(request):
         '''.format(contact['message'], contact['email'])
         send_mail(name, message, None , recipients)
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 from django.contrib.auth import authenticate, login
 
 
 app_name = 'education'
 # Create your views here.
 def home(request):
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
     return render(request, 'education/home.html', {})
 
@@ -62,6 +68,11 @@ def about(request):
     return render(request, 'education/about.html')
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+def application(request):
+    return render(request, 'education/application.html')
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 def application(request):
     return render(request, 'education/application.html')
@@ -71,6 +82,7 @@ def application(request):
 def starter(request):
     return render(request, 'education/starter.html')
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 def application(request):
@@ -108,11 +120,16 @@ def application(request):
 
     
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 def elearning(request):
     return render(request, 'education/e-learning.html')
 
 
 
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 

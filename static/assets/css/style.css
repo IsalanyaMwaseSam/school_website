@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -10,6 +11,8 @@ body {
 
 
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 /*
     
 TemplateMo 557 Grad School
@@ -26,6 +29,9 @@ body {
 }
 
 /* Basic */
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
 a {
@@ -54,7 +60,10 @@ p {
     text-align: center;
     margin-bottom: 70px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-top: -100px;
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 }
@@ -84,7 +93,11 @@ p {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+/* Buttons */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 /* Buttons */
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -112,8 +125,11 @@ p {
   outline: none;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 /**#login-form{
     display: none;
 }
@@ -203,6 +219,9 @@ span{
   color: white;
   font-size: 15;
 }**/
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 a.menu-link { display: none; }
 
@@ -716,6 +735,7 @@ header{
 
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (max-width: 350px){
   .main-header .logo a{
     font-size: 22px;
@@ -755,6 +775,8 @@ header{
 }
 
 
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 
@@ -1287,7 +1309,11 @@ section.video .left-content span {
 
 section.video .left-content h4 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-top: -50px;
+=======
+    margin-top: 20px;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
     margin-top: 20px;
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -1298,7 +1324,10 @@ section.video .left-content h4 {
     line-height: 40px;
     margin-bottom: 20px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin-left: 70px;
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 }
@@ -1316,7 +1345,11 @@ section.video .left-content .main-button {
   width: 100%;
   max-width: 600px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   margin-top: 250px;
+=======
+  margin: 0px auto 0;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
   margin: 0px auto 0;
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -1336,13 +1369,19 @@ section.video .left-content .main-button {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .video-item figure {
   position: relative;
   width: 100%;
   font-size: 0;
 }
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .video-item figure img {
   width: 100%;
@@ -1392,6 +1431,7 @@ section.video .left-content .main-button {
     font-weight: 700;
     letter-spacing: 1px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 }
 .figure{
@@ -1427,6 +1467,11 @@ section.video .left-content .main-button {
 
 
 
+=======
+}
+
+/* Magnific Popup CSS */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 }
 
@@ -1735,7 +1780,11 @@ button::-moz-focus-inner {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+/* Main image in popup */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 /* Main image in popup */
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -1751,7 +1800,11 @@ img.mfp-img {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+/* The shadow behind the image */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 /* The shadow behind the image */
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -1812,7 +1865,13 @@ img.mfp-img {
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+  /**
+       * Remove all paddings around the image on small screen
+       */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
   /**
        * Remove all paddings around the image on small screen
@@ -1893,6 +1952,10 @@ img.mfp-img {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+/* Contact */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 /* Contact */
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -1989,7 +2052,11 @@ footer p {
     margin-bottom: 0px;
     padding: 25px 0px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     color: #fff;
+=======
+    color: green;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
     color: green;
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -2067,7 +2134,11 @@ footer p a:hover {
   box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.4);
   margin: 10px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #fff;
+=======
+  color: green;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
   color: green;
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -2079,11 +2150,16 @@ footer p a:hover {
   box-shadow: 0px 1px 3px 2px rgba(255, 255, 255, 0.9);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (max-width: 350px){
   .social a{
     margin: 2px;
   }
   
+=======
+.social h6{
+  color: #05ff05;
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 .social h6{
   color: #05ff05;

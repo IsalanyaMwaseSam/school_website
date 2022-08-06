@@ -1,5 +1,6 @@
 from django.db import models
 <<<<<<< HEAD
+<<<<<<< HEAD
 from education.choices import *
 
 class Course(models.Model):
@@ -35,6 +36,10 @@ class Application(models.Model):
   class Meta:
     verbose_name = "Applications"
     verbose_name_plural = "Applications"
+=======
+
+# Create your models here.
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 
 # Create your models here.

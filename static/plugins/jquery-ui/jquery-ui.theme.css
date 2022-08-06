@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 /*!
  * jQuery UI CSS Framework 1.12.1
  * http://jqueryui.com
@@ -16,6 +19,9 @@
 
 /* Component containers
 ----------------------------------*/
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .ui-widget {
 	font-family: Arial,Helvetica,sans-serif;
@@ -53,7 +59,12 @@
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+/* Interaction states
+----------------------------------*/
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 /* Interaction states
 ----------------------------------*/
@@ -64,7 +75,12 @@
 .ui-button,
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+/* We use html here because we need a greater specificity to make sure disabled
+works properly when clicked or hovered */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 /* We use html here because we need a greater specificity to make sure disabled
 works properly when clicked or hovered */
@@ -140,7 +156,12 @@ a.ui-button:active,
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+/* Interaction Cues
+----------------------------------*/
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 /* Interaction Cues
 ----------------------------------*/
@@ -188,7 +209,11 @@ a.ui-button:active,
 .ui-widget-header .ui-priority-secondary {
 	opacity: .7;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	filter:Alpha(Opacity=70); 
+=======
+	filter:Alpha(Opacity=70); /* support: IE8 */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 	filter:Alpha(Opacity=70); /* support: IE8 */
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -199,6 +224,7 @@ a.ui-button:active,
 .ui-widget-header .ui-state-disabled {
 	opacity: .35;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	filter:Alpha(Opacity=35); 
 	background-image: none;
 }
@@ -208,6 +234,8 @@ a.ui-button:active,
 
 
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 	filter:Alpha(Opacity=35); /* support: IE8 */
 	background-image: none;
 }
@@ -219,6 +247,9 @@ a.ui-button:active,
 ----------------------------------*/
 
 /* states and images */
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .ui-icon {
 	width: 16px;
@@ -227,21 +258,28 @@ a.ui-button:active,
 .ui-icon,
 .ui-widget-content .ui-icon {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background-image: url("/images/ui-icons_444444_256x240.png");
 }
 .ui-widget-header .ui-icon {
 	background-image: url("/images/ui-icons_444444_256x240.png");
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 	background-image: url("images/ui-icons_444444_256x240.png");
 }
 .ui-widget-header .ui-icon {
 	background-image: url("images/ui-icons_444444_256x240.png");
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon,
 .ui-button:hover .ui-icon,
 .ui-button:focus .ui-icon {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	background-image: url("/images/ui-icons_555555_256x240.png");
 }
@@ -263,6 +301,8 @@ a.ui-button:active,
 
 
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 	background-image: url("images/ui-icons_555555_256x240.png");
 }
 .ui-state-active .ui-icon,
@@ -282,6 +322,9 @@ a.ui-button:active,
 }
 
 /* positioning */
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .ui-icon-blank { background-position: 16px 16px; }
 .ui-icon-caret-1-n { background-position: 0 0; }
@@ -421,7 +464,11 @@ a.ui-button:active,
 .ui-icon-seek-end { background-position: -64px -160px; }
 .ui-icon-seek-start { background-position: -80px -160px; }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 /* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -466,12 +513,18 @@ a.ui-button:active,
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 /* Misc visuals
 ----------------------------------*/
 
 /* Corner radius */
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 .ui-corner-all,
 .ui-corner-top,
@@ -499,17 +552,23 @@ a.ui-button:active,
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .ui-widget-overlay {
 	background: #aaaaaa;
 	opacity: .003;
 	filter: Alpha(Opacity=.3); 
 =======
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 /* Overlays */
 .ui-widget-overlay {
 	background: #aaaaaa;
 	opacity: .003;
 	filter: Alpha(Opacity=.3); /* support: IE8 */
+<<<<<<< HEAD
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
+=======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 }
 .ui-widget-shadow {

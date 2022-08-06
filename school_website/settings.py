@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import django_heroku
+=======
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 """
@@ -18,7 +21,11 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 <<<<<<< HEAD
+<<<<<<< HEAD
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+=======
+BASE_DIR = Path(__file__).resolve().parent.parent
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 BASE_DIR = Path(__file__).resolve().parent.parent
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -32,7 +39,11 @@ SECRET_KEY = 'django-insecure-g2(gq@ut*sasb&ej#+1nc5$e=!f^&#n=(r9i%67!n$wn9&i9rf
 
 # SECURITY WARNING: don't run with debug turned on in production!
 <<<<<<< HEAD
+<<<<<<< HEAD
 DEBUG = False
+=======
+DEBUG = True
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 DEBUG = True
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -51,6 +62,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'education',
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    'users',
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
     'users',
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
@@ -93,6 +108,11 @@ WSGI_APPLICATION = 'school_website.wsgi.application'
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+# Database
+# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -111,7 +131,12 @@ DATABASES = {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+# Password validation
+# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -134,7 +159,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+# Internationalization
+# https://docs.djangoproject.com/en/3.2/topics/i18n/
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
@@ -156,12 +186,18 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, '/staticfiles/')
 
+=======
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
@@ -178,6 +214,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
@@ -198,6 +235,9 @@ MIDDLEWARE_CLASSES = (
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 #activate django-heroku
 django_heroku.settings(locals())
+=======
+LOGIN_REDIRECT_URL = 'starter'
+>>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
 =======
 LOGIN_REDIRECT_URL = 'starter'
 >>>>>>> a9d900c1457080d90d61291d4e50f857aa62fa23
